@@ -45,7 +45,7 @@ const initialState: CounterState = {
 // 리듀서를 작성합니다.
 // 리듀서에서는 state 와 함수의 반환값이 일치하도록 작성하세요.
 // 액션에서는 우리가 방금 만든 CounterAction 을 타입으로 설정합니다.
-function counter(
+export default function counter(
   state: CounterState = initialState,
   action: CounterAction
 ): CounterState {
@@ -60,5 +60,3 @@ function counter(
       return state;
   }
 }
-
-export default counter;
