@@ -5,9 +5,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "deploy": "gh-pages-deploy",
+    "preview": "vite preview --port 8080"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
+    "gh-pages-deploy": "^0.5.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
