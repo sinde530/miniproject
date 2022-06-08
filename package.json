@@ -11,6 +11,7 @@
     "coverage": "jest --coverage"
   },
   "dependencies": {
+    "@emotion/jest": "^11.9.1",
     "@reduxjs/toolkit": "^1.8.2",
     "@types/react-redux": "^7.1.24",
     "gh-pages": "^4.0.0",
@@ -24,6 +25,7 @@
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
     "@babel/preset-typescript": "^7.17.12",
+    "@storybook/addon-storyshots": "^6.5.7",
     "@types/jest": "^28.1.1",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
@@ -42,24 +44,25 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "jest": "^28.1.1",
     "prettier": "^2.6.2",
+    "react-test-renderer": "^18.1.0",
     "typescript": "^4.7.3",
     "vite": "^2.9.9"
   },
-    "jest": {
-        "transform": {
-            "^.+\\.ts$": "ts-jest"
-        },
-        "testRegex": "\\.test\\.ts$",
-        "moduleFileExtensions": [
-            "ts",
-            "tsx",
-            "js",
-            "json"
-        ],
-        "globals": {
-            "ts-jest": {
-                "diagnostics": true
-            }
-        }
+  "jest": {
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testRegex": "\\.test\\.ts$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ],
+    "globals": {
+      "ts-jest": {
+        "diagnostics": true
+      }
+    }
   }
 }
