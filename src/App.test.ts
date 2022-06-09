@@ -1,9 +1,9 @@
-import { render } from "react-dom"
+import { render } from "@testing-library/react";
 
 import App from "./App"
 
 describe('App', () => {
-    it('앱이 돌아갈까',() => {
+    it('qwer',() => {
         render(<App/>);
         expect(screen.getByText(/Crong/)).toBeInTheDocument();
     })
